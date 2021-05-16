@@ -8,6 +8,11 @@ const routes = [{
   path: "/",
   name: "index",
   component: Index,
+  children: [{
+    path: '/user',
+    name: 'user',
+    component: () => import('@/views/user')
+  }]
 }, ];
 
 const router = new VueRouter({
