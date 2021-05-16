@@ -1,10 +1,21 @@
 <template>
   <ul class="nav-bar">
 
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
+    <li>
+      <i class="icon icon-help"></i>
+    </li>
+    <li>
+      <i class="icon icon-search"></i>
+    </li>
+    <li>
+      <a href="javscript:;" class="select-cars">选择车辆</a>
+    </li>
+    <li>
+      <i class="icon icon-location"></i>
+    </li>
+    <li>
+      <i class="icon icon-user"></i>
+    </li>
 
   </ul>
 </template>
@@ -29,6 +40,26 @@ export default {
   text-align: center;
   li {
     display: inline-block;
+    .icon {
+      margin: 0 17px;
+      background-color: $main-color;
+      border-radius: 50%;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .select-cars {
+      display: block;
+      width: 240px;
+      height: 84px;
+      margin: 0 17px;
+      border-radius: 100px;
+      line-height: 84px;
+      text-align: center;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 300;
+      background-color: $main-color;
+    }
   }
 }
 </style>
